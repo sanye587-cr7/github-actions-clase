@@ -4,7 +4,7 @@ on: [push] # clave: on | valor: listan con elementos [push]
 jobs: # Trabajo o acción que va a realizar la automatizacion
   primer-job: # nombre del job
     runs-on: ubuntu-latest # Maquina donde corre la automatizacion
-    steps:
+    steps: # Pasos que realiza el job
       - name: Descargar el código
         uses: actions/checkout@v4 # clonamos el repositorio del runner
 
